@@ -1,16 +1,16 @@
 
 # Medication Data Management and Synthetic Patient Data Generation
 
-This repository contains R scripts for managing a detailed list of medications and generating synthetic patient data. These tools are ideal for researchers and developers working in health informatics who need to simulate patient data for analysis or software testing.
+This repository contains R scripts for managing a list of medications and generating synthetic patient data. These tools are ideal for researchers and developers working in health informatics who need to simulate patient data for analysis or software testing.
 
 ## Features
 
-- **Medication Database**: Includes 50 common medications along with their dosage forms and doses.
+- **Medication Database**: Includes 50 common medications along with their dosage forms and doses (not BNF verified).
 - **Synthetic Patient Data Generation**: Functions to generate synthetic data for a set of patients, including prescriptions based on the medication database.
 
 ## Dependencies
 
-To run the scripts, you will need R and several packages from the Tidyverse, among others. Here's how to install the required packages:
+To run the scripts, you will need R and some packages from the Tidyverse, among others. Here's how to install the required packages:
 
 ```R
 install.packages("tidyverse")
@@ -35,7 +35,7 @@ The script sets up a tibble with 50 different medications, adjusting some specif
 
 ### Saving Data
 
-Generated patient data is saved to a CSV file `patients_data_expanded.csv` with the structure optimized for use without redundant quotes and without row names.
+Generated patient data is saved to a CSV file `patients_data_expanded.csv` without redundant quotes and without row names.
 
 ## Example
 
@@ -51,7 +51,7 @@ write.csv(patients_data,"patients_data_expanded.csv",row.names = F,quote = F)
 
 ## Contributing
 
-Contributions to this project are welcome. Please feel free to fork the repository and submit pull requests.
+Contributions to this project are welcome, specially for the BNF route, dosage specs of the drugs. Please feel free to fork the repository and submit pull requests.
 
 ## License
 
